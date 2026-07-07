@@ -7,3 +7,4 @@ def g (s : String) : Bool := s.length > 0
 #check fun x => g (f x)
 
 #check fun (g : String → Bool) (f : Nat → String) (x : Nat) => g (f x)
+#check fun (α β γ : Type) (g : β → γ) (f : α → β) (x : α) => g (f x)
