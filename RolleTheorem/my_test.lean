@@ -18,3 +18,5 @@ def F (α : Type u) : Type u := Prod α α
 #check F
 #check F Nat
 #check F (List Nat)
+def α : Bool := true
+#check α
