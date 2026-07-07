@@ -20,3 +20,8 @@ def F (α : Type u) : Type u := Prod α α
 #check F (List Nat)
 def α : Bool := true
 #check α
+
+#check fun (x : Nat) => x + 5-- λ 和 fun 意思相同
+#check λ (x : Nat) => x + 5
+
+#eval (λ x : Nat => x + 5) 10
