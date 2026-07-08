@@ -1,3 +1,14 @@
+section useful
+  variable (α β γ : Type)
+  variable (g : β → γ) (f : α → β) (h : α → α)
+  variable (x : α)
+
+  def compose_one := g (f x)
+  def doTwice_one := h (h x)
+  def doThrice_one := h (h (h x))
+end useful
+
+
 variable (α β γ : Type)
 variable (g : β → γ) (f : α → β) (h : α → α)
 variable (x : α)
