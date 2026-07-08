@@ -1,14 +1,14 @@
 variable (α β γ : Type)
+variable (g : β → γ) (f : α → β) (h : α → α)
+variable (x : α)
 
-def compose (g : β → γ) (f : α → β) (x : α) : γ :=
-  g (f x)
+def compose := g (f x)
+def doTwice := h (h x)
+def doThrice := h (h (h x))
 
-def doTwice (h : α → α) (x : α) : α :=
-  h (h x)
-
-def doThrice (h : α → α) (x : α) : α :=
-  h (h (h x))
-
+#print compose
+#print doTwice
+#print doThrice
 
 #eval doTwice Nat (fun x => x + 3) 5
 #eval doThrice Nat (fun x => x + 1) 0
