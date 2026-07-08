@@ -16,3 +16,9 @@ def foo_other_another(a : Type) (x : a) : a := x
 
 def foo_the_another := fun(a : Type) => fun(x : a) => x
 #eval foo_the_another Nat 1
+
+def foo_the_other_another := fun a => fun(x : a) => x
+#eval foo_the_other_another Nat 1
+
+def foo_the_other_other_another := (fun a => fun(x : a) => x) Nat
+#eval foo_the_other_other_another 1
