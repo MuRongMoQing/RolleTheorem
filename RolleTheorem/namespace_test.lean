@@ -24,3 +24,13 @@ open Foo
 #check f
 #check fa
 #check Foo.fa
+
+#check List.nil
+#check List.cons
+#check List.map
+
+open List
+
+#check nil
+#check cons
+#check map
